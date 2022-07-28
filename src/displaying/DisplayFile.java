@@ -11,13 +11,20 @@ public class DisplayFile {
 	      //List of all files and directories
 	      File contentsArr[] = path.listFiles();
 	      Arrays.sort(contentsArr);
-	      System.out.println("----------- List of all the Files -----------\n");
-	      System.out.println("Location -- "+path+"\n");
+	      if(contentsArr.length<=0)
+	      {
+	    	  System.out.println("Directory is empty");
+	      }
+	      else
+	      {
+	    	  System.out.println("----------- List of all the Files -----------\n");
+	    	  System.out.println("Location -- "+path+"\n");
 
-	      for(int i=0; i<contentsArr.length; i++) 
-	      { 
-	          System.out.println(i+1+". "+contentsArr[i].getName());
-	          System.out.println();
+	    	  for(int i=0; i<contentsArr.length; i++) 
+	    	  { 
+	    		  System.out.println(i+1+". "+contentsArr[i].getName());
+	    		  System.out.println();
+	    	  }
 	      }
 	}
 
