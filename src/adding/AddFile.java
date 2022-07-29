@@ -41,9 +41,8 @@ public class AddFile {
 			String FinalPath = path+filename;
 			//opening file with specified location
 			FileOutputStream out= new FileOutputStream(FinalPath);
-			//calling userData method to get data of the user.
-			System.out.println("Write something.");
 			
+			System.out.println("Write something.");
 			String str = sc.nextLine();
 			String input = str;
 			byte array[]=  input.getBytes();

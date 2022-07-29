@@ -12,7 +12,7 @@ public class ReadFile
 	{
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the name of the file you want to delete (abc.txt)");
+		System.out.println("Enter the name of the file you want to Read (abc.txt)");
 		String fileName = sc.nextLine();
 		//getting location of file user want to read
 		FileInputStream stream= new FileInputStream("D:\\simplilearn\\phase1project\\"+fileName);

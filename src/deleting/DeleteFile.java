@@ -20,7 +20,5 @@ public class DeleteFile {
 		{
 			System.out.println("Failed, File not available.");
 		}
-		
-		
 	}
 }
